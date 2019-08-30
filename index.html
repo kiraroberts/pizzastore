@@ -10,20 +10,22 @@
   <body>
     <div class="container">
       <h1>Pizza Store</h1>
-      <form class="" action="index.html" method="post">
+      <form id="formPizza">
         <h2>Choose your size:</h2>
-        <select class="" name="">
-          <option value="">Regular</option>
-          <option value="">Large</option>
+        <select id="formSize">
+          <option value="10">Regular</option>
+          <option value="15">Large</option>
         </select>
         <h2>Choose your toppings:</h2>
-        <select class="" name="">
-          <option value="">Cheese</option>
-          <option value="">Pepperoni</option>
-
+        <select id="formTopping">
+          <option value="2">Cheese</option>
+          <option value="3">Pepperoni</option>
+          <button type="submit" id="submit"></button>
         </select>
-
       </form>
+      <div id="displayCost">
+        
+      </div>
     </div>
   </body>
 </html>
