@@ -10,10 +10,9 @@ body {
   display: none;
 }
 
-img {
+#brandLogo {
   margin: 20px;
   margin-top: 10px;
-  margin-right: 100%;
   display: block;
 }
 
