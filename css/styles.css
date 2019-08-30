@@ -3,11 +3,34 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 110%;
+  font-family: sans-serif;
+}
+
+img {
+  margin: 20px;
+  margin-top: 10px;
+  margin-right: 100%;
+  display: block;
+}
+
+select {
+  background-color: darkgray;
+}
+
+button {
+  background-color: darkgray;
+  border-color: darkgray;
+  margin-top: 15px;
+}
+
+h1, h2 {
+  color: white;
 }
 
 .panel {
+  padding: 10px;
   float: left;
-  margin-top: 10%;
-  background-color: rgba(50, 50, 50, 0.8);
+  margin-top: 5%;
+  background: rgba(50, 50, 50, 0.8);
   border-color: black;
 }
