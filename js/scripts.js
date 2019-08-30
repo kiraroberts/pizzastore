@@ -22,3 +22,13 @@ Pizza.prototype.findCost() {
   this.toppings += totalOfToppings;
   this.total = this.toppings + this.size;
 }
+
+//FRONT END
+
+$(document).ready(function() {
+  $("#form").submit(function(event) {
+    event.preventDefault();
+    var inputSize = parseInt($("#formSize").val());
+    var inputTopping = parseInt($("#formTopping").val());
+  });
+});
