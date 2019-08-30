@@ -42,17 +42,10 @@ $(document).ready(function() {
     console.log(inputSauce);
 
     pizza1 = new Pizza();
-    // console.log(pizza1);
     pizza1.addSize(inputSize);
-    // console.log(pizza1.size);
     pizza1.addToppings(inputCheese, inputMeat, inputVegetable, inputSauce);
-    console.log(pizza1.toppings);
     var cost = pizza1.findCost();
-    // console.log(pizza1.total);
     var finalPrice = pizza1.total;
-    // console.log(finalPrice);
-
-
     $("#displayCost").text(finalPrice)
   });
 });
