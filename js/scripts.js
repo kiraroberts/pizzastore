@@ -32,13 +32,17 @@ $(document).ready(function() {
     var inputSize = parseInt($("#formSize").val());
     var inputCheese = parseInt($("#formCheese").val());
     var inputMeat = parseInt($("#formMeat").val());
-    var inputVegetable = parseInt($("#formVegetable").val());
+    var inputVegetable = parseInt($("#formVegetables").val());
     var inputSauce = parseInt($("#formSauce").val());
 
     pizza1 = new Pizza();
+    console.log(pizza1);
     pizza1.addSize(inputSize);
+    console.log(pizza1.size);
     pizza1.addToppings(inputCheese, inputMeat, inputVegetable, inputSauce);
+    console.log(pizza1.toppings);
     var cost = pizza1.findCost();
+    console.log(pizza1.total);
     var finalPrice = pizza1.total;
 
 
