@@ -32,15 +32,10 @@ $(document).ready(function() {
     event.preventDefault();
     $("#priceHider").show();
     var inputSize = parseInt($("#formSize").val());
-    console.log(inputSize);
     var inputCheese = parseInt($("#formCheese").val());
-    console.log(inputCheese);
     var inputMeat = parseInt($("#formMeat").val());
-    console.log(inputMeat);
     var inputVegetable = parseInt($("#formVegetables").val());
-    console.log(inputVegetable);
     var inputSauce = parseInt($("#formSauce").val());
-    console.log(inputSauce);
 
     pizza1 = new Pizza();
     pizza1.addSize(inputSize);
