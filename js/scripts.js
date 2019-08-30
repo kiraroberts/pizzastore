@@ -30,6 +30,7 @@ Pizza.prototype.findCost = function() {
 $(document).ready(function() {
   $("#formPizza").submit(function(event) {
     event.preventDefault();
+    $("#priceHider").show();
     var inputSize = parseInt($("#formSize").val());
     console.log(inputSize);
     var inputCheese = parseInt($("#formCheese").val());
