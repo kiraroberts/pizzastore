@@ -14,11 +14,11 @@ Pizza.prototype.addToppings = function(topping) {
   this.toppings.push(topping);
 }
 
-Pizza.prototype.findCost() {
+Pizza.prototype.findCost = function() {
   var totalOfToppings = 0;
   this.toppings.forEach(function(val) {
     totalOfToppings = totalOfToppings + val;
-  });
+  })
   this.toppings += totalOfToppings;
   this.total = this.toppings + this.size;
 }
@@ -26,9 +26,11 @@ Pizza.prototype.findCost() {
 //FRONT END
 
 $(document).ready(function() {
-  $("#form").submit(function(event) {
+  $("#formPizza").submit(function(event) {
     event.preventDefault();
     var inputSize = parseInt($("#formSize").val());
     var inputTopping = parseInt($("#formTopping").val());
+    console.log(inputSize);
+    console.log(inputTopping);
   });
 });
